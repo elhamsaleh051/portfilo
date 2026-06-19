@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Portfilo | ElhamSaleh</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="banner"></div>
+    <main>
+        <div class="container">
+            <div class="Work-experience">
+                <h2>Work Experience</h2>
+                <div class="Work-experience-cards">
+                    <div class="experience-card">
+                        <div class="experience-pic">
+                            <img src="images/experiance-star.svg" alt="experiance-star">
+                        </div>
+                        <div class="experience-text">
+                            <h5>CIB on the Mobile</h5>
+                            <p>Take your client onboard seamlessly by our amazing
+                                tool of digital onboard process.
+                            </p>
+                            <button class="btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-pic">
+                            <img src="images/experiance-light.svg" alt="experiance-light">
+                        </div>
+                        <div class="experience-text">
+                            <h5>CIB on the Mobile</h5>
+                            <p>Take your client onboard seamlessly by our amazing
+                                tool of digital onboard process.
+                            </p>
+                            <button class="btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-pic">
+                            <img src="images/experiance-coffe.svg" alt="experiance-coffe">
+                        </div>
+                        <div class="experience-text">
+                            <h5>CIB on the Mobile</h5>
+                            <p>Take your client onboard seamlessly by our amazing
+                                tool of digital onboard process.
+                            </p>
+                            <button class="btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-pic">
+                            <img src="images/-experiance-picker.svg" alt="-experiance-picker">
+                        </div>
+                        <div class="experience-text">
+                            <h5>CIB on the Mobile</h5>
+                            <p>Take your client onboard seamlessly by our amazing
+                                tool of digital onboard process.
+                            </p>
+                            <button class="btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script>
+        async function loadComponent(id, file) {
+            const res = await fetch(`components/${file}`);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        }
+        loadComponent('header', 'header.html');
+        loadComponent('banner', 'banner.html');
+    </script>
+</body>
+
+</html>
