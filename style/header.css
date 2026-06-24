@@ -15,7 +15,7 @@
 .nav-bar .nav {
   list-style: none;
   display: flex;
-  gap: 168px;
+  gap: 160px;
 }
 .nav li {
   display: inline-block;

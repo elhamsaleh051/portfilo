@@ -12,12 +12,13 @@
 }
 @font-face {
   font-family: "Preahvihear";
-  src: url("fonts/Preahvihear-Regular.ttf") format("truetype"),
-  url("fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  src:
+    url("fonts/Preahvihear-Regular.ttf") format("truetype"),
+    url("fonts/Poppins/Poppins-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Poppins';
-  src: url('fonts/Poppins/Poppins-Regular.ttf') format("truetype");
+  font-family: "Poppins";
+  src: url("fonts/Poppins/Poppins-Regular.ttf") format("truetype");
 }
 * {
   padding: 0;
@@ -51,29 +52,137 @@ main .Work-experience-cards {
   gap: 20px;
 }
 .Work-experience-cards .experience-card {
-background: #130428;
-background: linear-gradient(350deg,rgba(19, 4, 40, 1) 0%, rgba(56, 18, 109, 0) 17%, rgba(56, 18, 109, 1) 45%, rgba(38, 16, 69, 1) 70%, rgba(25, 6, 52, 1) 90%);  display: flex;
-align-items: center;
-  border: 1px solid #693b93;
-  padding-bottom: 24px ;
+  background: #130428;
+  background: linear-gradient(
+    350deg,
+    rgba(19, 4, 40, 1) 0%,
+    rgba(56, 18, 109, 0) 17%,
+    rgba(56, 18, 109, 1) 45%,
+    rgba(38, 16, 69, 1) 70%,
+    rgba(25, 6, 52, 1) 90%
+  );
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #693b93;
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: 4px 7px 26px 0 #000;
 }
-.experience-card .experience-pic{
-  padding: 36px 17px 17px 50px;
+.experience-card .experience-pic {
+  padding: 20px 15px;
 }
-.experience-card .experience-text h5{
+.experience-card .experience-text h5 {
   font-family: Poppins;
   font-size: 26px;
   font-weight: 600;
   line-height: 32.5px;
   letter-spacing: 0%;
 }
-.experience-card .experience-text p{
+.experience-card .experience-text p {
   font-family: Poppins;
   font-size: 8px;
   font-weight: 500;
   line-height: 10.5px;
   letter-spacing: 0%;
 }
-.Work-experience .experience-text .btn{
+.Work-experience .experience-text .btn {
+  background-color: #2c1250;
+  border: 1px solid #693b93;
+  color: #fff;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.cross-functional {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.cross-functional-text p {
+  color: #fff;
+  font-family: "Preahvihear";
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 2%;
+  font-weight: 400;
+  text-align: center;
+}
+.cross-functional-text span {
+  color: #a362ff;
+}
+.cross-functional .skils {
+  width: 100%;
   
+}
+.cross-functional .languages-web  {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+margin-bottom: 20px;
+}
+.cross-functional .skils .languages-web div {
+  background-color: #251c31;
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.cross-functional .ghraphic-app {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+
+}
+.cross-functional .skils .ghraphic-app div {
+  background-color: #251c31;
+  width: 44px;
+  height: 44px; 
+  padding: 6px ;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 111;
+}
+.cross-functional .skils img{
+  margin: 0 auto;
+}
+.item-app::after{
+  content: "";
+  position: absolute;
+  top: 40px;
+}
+.line1::after{
+  content: url(images/line1.svg);
+  left: 30px;
+}
+.line2::after{
+  content: url(images/line2.svg);
+  left: 20px;
+}
+.line3::after{
+  content: url(images/line3.svg);
+left: 20px;
+}
+.line4::after{
+  content: url(images/line4.svg);
+  left: -15px;
+}
+.line5::after{
+  content: url(images/line5.svg);
+  left: -60px;
+}
+.line6::after{
+  content: url(images/line6.svg);
+  left: -115px;
 }
