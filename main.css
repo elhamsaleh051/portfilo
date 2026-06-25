@@ -53,11 +53,12 @@ main .Work-experience-cards {
 background: #130428;
 background: linear-gradient(350deg,rgba(19, 4, 40, 1) 0%, rgba(56, 18, 109, 0) 17%, rgba(56, 18, 109, 1) 45%, rgba(38, 16, 69, 1) 70%, rgba(25, 6, 52, 1) 90%);  display: flex;
 align-items: center;
-  border: 1px solid #693b93;
-  padding-bottom: 24px ;
+  border-top: 2px solid #693b93;
+  /* padding-bottom: 24px ; */
+  border-radius: 10px;
 }
 .experience-card .experience-pic{
-  padding: 36px 17px 17px 50px;
+  padding: 20px 8px 17px 10px;
 }
 .experience-card .experience-text h5{
   font-family: Poppins;
